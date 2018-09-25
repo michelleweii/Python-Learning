@@ -186,7 +186,8 @@ print("1 添加一个新的名片")
 print("2 删除一个名片")
 print("3 修改一个名片")
 print("4 查询一个名片")
-print("5 退出系统")
+print("5 show")
+print("6 退出系统")
 print("="*50)
 
 # 用来存储名片
@@ -236,9 +237,27 @@ while True:
             print("%s\t%s\t%s"%(temp['name'],temp['qq'],temp['addr']))
 
     elif num == 6:
-        pass
+        break
     else:
         print("输入有误")
 
     print("")
 
+print("")
+print("extend()和append()的区别")
+a = [11,22,33]
+d = [11,22,33]
+b = [44,55]
+e = [44,55]
+c = a.extend(b)
+f = d.append(e)
+print("after extend: ")
+print(c) #None  # append的操作返回值就是None，是直接操作在a上
+print(a.extend(b)) # None
+print(a)
+# [11, 22, 33, 44, 55, 44, 55]
+print("after append: ")
+print(f) # None
+print(d.append(e)) # None
+print(d)
+# [11, 22, 33, [44, 55], [44, 55]]  # append当做整体添加
