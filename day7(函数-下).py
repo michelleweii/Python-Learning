@@ -297,8 +297,137 @@ test5 = {"name":"Amy",100:"hh",(11,22):'dwe'}
 print(test5) # {'name': 'Amy', 100: 'hh', (11, 22): 'dwe'}
 # test6 = {"name":"Amy",100:"hh",(11,22):'dwe',[44,55]:'swn'}
 # print(test6) # TypeError: unhashable type: 'list'
+# list不是可以哈希的值！！！！！
+
 
 # 递归
 print("")
-print("递归")
+print("递归:")
 # 内存溢出
+
+# 匿名函数
+print("")
+print("匿名函数:")
+# lambda 参数：式子
+# 变量 = lambda x,y:x+y
+
+def test6(a,b):
+    result1 = a+b
+    # 不写return，则不会返回任何值
+result1 = test6(1,2)
+# print("result=%d"%result1) #TypeError: %d format: a number is required, not NoneType
+
+# 定义一个匿名函数
+func = lambda a,b:a+b # 不写return，自带return，有返回值
+result2 = func(1,2)
+print("result2=%d"%result2) # result2=3
+
+# 匿名函数的优点：
+# 对于一个纯数字组成的list，调用.sort()即可排序。
+# 但是对于字典来说，里面的值比较多，无法确定是从哪一个开始排序
+
+stus = [{"name":"zhangsan","age":18},
+        {"name":"lisi","age":19},
+        {"name":"wangwu","age":17}]
+# stus.sort() # error!
+
+# 使用匿名函数进行排序
+# 将{"name":"zhangsan","age":18}整个传递给x,然后取x['name']进行字符串排序
+stus.sort(key=lambda x:x['name'])
+print(stus)
+# [{'name': 'lisi', 'age': 19},
+# {'name': 'wangwu', 'age': 17},
+# {'name': 'zhangsan', 'age': 18}]
+
+print("")
+print("匿名函数的应用:")
+def nimingapp(a,b,func):
+    result = func(a,b)
+    print(result)
+nimingapp(11,22,lambda x,y:x+y)  # 可以修改加减乘除
+"""
+# 动态输入
+def nimingapp2(a,b,func):
+    result2 = func(a,b)
+    print(result2)
+
+func_new = input('请输入一个匿名函数：')
+
+# eval(str)函数很强大，官方解释为：将字符串str当成有效的表达式来求值并返回计算结果。
+# 所以，结合math当成一个计算器很好用。
+func_new = eval(func_new)
+
+nimingapp2(11,22,func_new)
+"""
+"""
+匿名函数的应用:
+33
+请输入一个匿名函数：lambda x,y:x+y+100
+133
+"""
+print("")
+print()
+# 知识点补充
+a1 = 100
+
+def test7(num):
+    num+=num
+    print("in-----test-----")
+    print(num)
+    print("----------------")
+
+test7(a1) # a1的引用 # 200
+print(a1) # 100
+
+print("")
+a2 = [100]
+
+def test7(num):
+    num+=num
+    print("in-----test-----")
+    print(num)
+    print("----------------")
+
+test7(a2) # a1的引用 # 200
+print(a2) # 100
+"""
+in-----test-----
+[100, 100]
+----------------
+[100, 100] # 因为列表是可变类型，可以直接修改
+"""
+
+# 交换两个变量
+a = 4
+b = 5
+
+# 交换方式1
+c = 0
+c = a
+a = b
+b = c
+# 方法2
+a = a+b
+b = a-b
+a = a-b
+# 方法3
+a,b = b,a
+
+
+# python中任何方式都是指向，而不是真正的赋值
+# so,
+a2 = [100]
+print("test8 知识点补充：")
+def test8(num):
+    # 与c不同之处
+    # 注意：与 num+=num不同，num指向谁，就直接修改里面的值，所以最后a2变了。
+    # num=num+num---->[100]+[100]--->[100,100],是让num指向了一个新的值，a2没有变。
+    num = num+num
+    print('*****num+=num')
+    # num+=num # [100, 100]
+    # print('*****num = num+num')
+    print(num) # [100, 100]
+    print('*****')
+
+test8(a2) # [100, 100]
+print(a2) # [100]

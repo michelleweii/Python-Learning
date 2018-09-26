@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc3cc57-740f-4122-b00d-7df442d3f2bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pythonTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythonTest[复件].txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5(字符串、列表、字典).py" beforeDir="false" afterPath="$PROJECT_DIR$/day5(字符串、列表、字典).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day6(元组、函数-上).py" beforeDir="false" afterPath="$PROJECT_DIR$/day6(元组、函数-上).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day7(函数-下).py" beforeDir="false" afterPath="$PROJECT_DIR$/day7(函数-下).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8(字符串操作、文件).py" beforeDir="false" afterPath="$PROJECT_DIR$/day8(字符串操作、文件).py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,52 +27,41 @@
     <session id="558471150">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="11" />
+          <entry key="py" value="13" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="11" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="27" />
-          <entry key="py" value="7070" />
+          <entry key="py" value="10678" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="7070" />
+          <entry key="Python" value="10678" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day7(函数-下).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="298" lean-forward="true" selection-start-line="298" selection-end-line="298" />
-              <folding>
-                <marker date="1537791329721" expanded="true" signature="74:79" ph="..." />
-                <marker date="1537791329721" expanded="true" signature="373:378" ph="..." />
-                <marker date="1537791329721" expanded="true" signature="481:486" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day9(面向对象-1).py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -107,7 +97,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/day3.py" />
-        <option value="$PROJECT_DIR$/day8(字符串操作、文件).py" />
         <option value="$PROJECT_DIR$/day9(面向对象-1).py" />
         <option value="$PROJECT_DIR$/day10(面向对象-2).py" />
         <option value="$PROJECT_DIR$/day11(面向对象-3、异常、模块).py" />
@@ -115,14 +104,15 @@
         <option value="$PROJECT_DIR$/day5(字符串、列表、字典).py" />
         <option value="$PROJECT_DIR$/day6(元组、函数-上).py" />
         <option value="$PROJECT_DIR$/day7(函数-下).py" />
+        <option value="$PROJECT_DIR$/day8(字符串操作、文件).py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="80" />
+    <option name="x" value="47" />
     <option name="y" value="23" />
-    <option name="width" value="1319" />
-    <option name="height" value="877" />
+    <option name="width" value="1253" />
+    <option name="height" value="851" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -130,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,11 +131,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -160,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day7(函数-下)">
+  <component name="RunManager" selected="Python.day8(字符串操作、文件)">
     <configuration name="day3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,13 +220,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="day8(字符串操作、文件)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day8(字符串操作、文件).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.day3" />
       <item itemvalue="Python.day6(元组、函数-上)" />
       <item itemvalue="Python.day7(函数-下)" />
+      <item itemvalue="Python.day8(字符串操作、文件)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day8(字符串操作、文件)" />
         <item itemvalue="Python.day7(函数-下)" />
         <item itemvalue="Python.day6(元组、函数-上)" />
         <item itemvalue="Python.day3" />
@@ -260,16 +279,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="23" width="1319" height="877" extended-state="0" />
+    <frame x="47" y="23" width="1253" height="851" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24961479" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26298702" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3490446" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15810277" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
@@ -286,26 +305,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day9(面向对象-1).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day10(面向对象-2).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day11(面向对象-3、异常、模块).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day12(加强练习).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/day6(元组、函数-上).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1458">
           <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <marker date="1537763747425" expanded="true" signature="741:746" ph="..." />
-            <marker date="1537763747425" expanded="true" signature="1205:1245" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -316,20 +319,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day8(字符串操作、文件).py">
+    <entry file="file://$PROJECT_DIR$/day12(加强练习).py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/day7(函数-下).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="298" lean-forward="true" selection-start-line="298" selection-end-line="298" />
+        <state relative-caret-position="341">
+          <caret line="432" column="17" selection-start-line="432" selection-start-column="17" selection-end-line="432" selection-end-column="17" />
           <folding>
-            <marker date="1537791329721" expanded="true" signature="74:79" ph="..." />
-            <marker date="1537791329721" expanded="true" signature="373:378" ph="..." />
-            <marker date="1537791329721" expanded="true" signature="481:486" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="74:79" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="373:378" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="481:486" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="5584:5603" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="6334:6339" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="6456:6461" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="6768:6773" ph="..." />
+            <marker date="1537856073805" expanded="true" signature="7463:7464" ph="..." />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonTest[复件].txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonTest.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day8(字符串操作、文件).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day10(面向对象-2).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11(面向对象-3、异常、模块).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day9(面向对象-1).py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
