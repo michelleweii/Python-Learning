@@ -1,3 +1,5 @@
+# review 15 16
+
 # 1-隐藏属性
 # 用属性设置不能做判断，用方法替代直接获取属性的方式。
 class Dog:
@@ -151,7 +153,6 @@ class A:
         print("test1")
     def __test2(self):
         print("test2")
-
     def test3(self):# 让子类调用
         self.__test2()# 让子类调用
         print(self.__num2)# 让子类调用
@@ -206,17 +207,126 @@ c.test2() #---test2
 c.test() # 老祖宗 #---Base
 
 
-
+print("")
+print(" # 11-多继承注意点")
 # 11-多继承注意点
+# 类名.__mro__决定着调用一个方法的时候，搜索的顺序，如果在某个类中找到了方法，就停止搜索。
+# 所以尽量不要在类里面出现相同的方法
+class Base11(object):
+    def test(self):
+        print("---Base")
+class A11(Base11):
+    def test(self):
+        print("---A")
+class B11(Base11):
+    def test(self):
+        print("---B")
+class C11(A11,B11):
+    # def test(self):
+    #     print("---C")
+    pass
 
+c = C11() #---A
+c.test()
+
+print(C.__mro__) # 类名！！！.__mro__
+# (<class '__main__.C'>, <class '__main__.A'>,
+# <class '__main__.B'>, <class '__main__.Base'>, <class 'object'>)
 
 # 12-多态
+# 见人说人说，见鬼说鬼话
+# 根据当前的对象调用此对象的方法。
+class Duotai(object):
+    def print_self(self):
+        print("大家好，我是xxx，希望以后")
+class duo(Duotai):
+    def print_self(self):
+        print("大家好，我是xxx，啊啊啊啊啊啊")
+def introduce(temp):
+    temp.print_self() # 执行的时候才决定调用谁
+
+dog1 = Duotai()
+dog2 = duo()
+introduce(dog1) # 大家好，我是xxx，希望以后
+introduce(dog2) # 大家好，我是xxx，啊啊啊啊啊啊
 
 # 13-多态-强调
+# python既是面向过程，又是面向对象
+# 面向对象语言的三个特性：封装、继承、多态
 
-# 14-多态的理解
+# 14-多态的理解（手机app中的文字————主题风格）
 
 
 # 15-类属性、实例属性
+# 完成一个工具的创建
+class Tool(object):
+    # 属性
+    num = 0 # 类属性
+
+    # 方法
+    def __init__(self, new_name):
+        # 有self的是实例属性
+        self.name = new_name
+        Tool.num += 1  # 调用类属性
+
+tool1 = Tool("铁锹")
+tool2 = Tool("铲子")
+tool3 = Tool("水桶")
+print(Tool.num) #3
+
+# 类在程序里面也是对象，称为类对象；
+# 由对象调用类所产生的叫做实例对象。（之前学的对象都叫做实例对象）
+# 实例对象里的属性叫做实例属性。
+# 类对象创建了一个变量，那么每一个实例对象都会分发一个这个类里的这个变量。
+# 类属性相当于在不同实例对象中共享，而不同的实例对象之间的变量需要用self来共享。
+"""
+实例属性：和具体的某个实例对象有关系，并且，一个实例对象和另外一个实例对象是不共享属性的。
+类属性：类属性所属于类对象，并且，多个实例对象之间，共享同一个类属性。
+"""
 
 # 16-实例方法、类方法、静态方法
+class Game(object):
+    # 类属性
+    num = 0
+
+    # 实例方法————修改实例属性
+    def __init__(self): # self保存对象
+        # 实例属性
+        self.name = "laowang" # self指向对象
+
+    # 类方法
+    # at是装饰器，固定的用法，对原有的功能再添加新的功能
+    @classmethod #有了这个之后，接下来的方法就变成类方法了。
+    def add_num(cls): # cls保存类的引用的
+        cls.num = 100  # cls指向类
+
+    # 静态方法
+    # 和类方法，实例方法都无关，只是完成简单的基本功能。
+    @staticmethod
+    def print_menu(): # 与上面两种相比，没有任何的参数传递，完成了类的基本功能。
+        print("------------------")
+        print("           穿越火线")
+        print(" 1.开始游戏")
+        print(" 2.结束游戏")
+        print("------------------")
+
+
+
+
+
+game = Game()
+# Game.add_num()----类方法可以通过类的名字调用类方法
+# Game.add_num()
+# 额，竟然对象也可以调用类方法。
+game.add_num() #-----还可以通过这个类创建出来的对象，去调用这个类方法
+print(Game.num) #100
+# 通过类去调用静态方法
+Game.print_menu()
+# 通过实例对象去调用静态方法
+game.print_menu()
+# output:
+#------------------
+           # 穿越火线
+ # 1.开始游戏
+ # 2.结束游戏
+# ------------------
