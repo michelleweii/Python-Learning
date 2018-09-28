@@ -41,7 +41,6 @@ class Cat:
 #    def __str__(self):
 #        return "{}的年龄是{}".format(self.name, self.age)
 
-
     # 方法
     def eat(self):
         print("猫仔吃鱼。。。")
@@ -120,15 +119,15 @@ class SweetPotato:
     def __init__(self): # 作用：初始化对象
         self.cookedString = "生的"
         self.cookedLevel = 0
-        self.condiments = []
+        self.condiments = [] # 佐料
 
     def __str__(self):
         return "地瓜-状态：{}-{}，添加的佐料有：{}".format(self.cookedString,
                                               self.cookedLevel,str(self.condiments))
 
     def cook(self, cooked_time):
-
 # 属性结束的那一刹那，方法才结束
+
         self.cookedLevel += cooked_time
 
         if self.cookedLevel >= 0 and self.cookedLevel<3:
@@ -150,10 +149,10 @@ print(digua)
 # 开始烤地瓜
 digua.cook(1)
 print(digua)
-digua.addCondiments("dasuan")
+digua.addCondiments("大蒜")
 digua.cook(1)
 print(digua)
-digua.addCondiments("ziran")
+digua.addCondiments("孜然")
 digua.cook(1)
 print(digua)
 
@@ -163,7 +162,7 @@ print(digua)
 
 print("")
 print("应用2")
-# 应用2----：存放家具
+# -----应用2----：存放家具
 # 把一个对象bed放到另一个对象home里面去
 class Home:
 
@@ -177,7 +176,7 @@ class Home:
 
 
     def __str__(self):
-        msg = "房子的总面积是{}，剩余面积是{}，户型是{}，地址是{}".format(self.area,
+        msg = "房子的总面积是{}，剩余面积是{}，户型是{}，地址是{}，".format(self.area,
                                                       self.left_area,self.info,self.addr)
         msg += " 当前房子里的物品有：{}".format(str(self.contain_items))
         return msg
