@@ -311,9 +311,6 @@ class Game(object):
         print("------------------")
 
 
-
-
-
 game = Game()
 # Game.add_num()----类方法可以通过类的名字调用类方法
 # Game.add_num()
