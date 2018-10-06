@@ -1,3 +1,5 @@
+# __all__ = ["test11"] # 其他人调用此模块，只有test11可以被其他人使用。其余的用不了。（木有if ...main()...）
+
 def test11():
     print("test11")
 def test22():
